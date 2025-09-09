@@ -10,6 +10,9 @@ router.get("/signin", getSignIn);
 
 router.post("/login",postLogin );
 
-app.get("/dashboard", getDashboard);
+// Assuming you have an authentication middleware named 'isAuthenticated'
+const { isAuthenticated } = require("../middleware/auth.middleware");
+
+router.get("/dashboard", isAuthenticated, getDashboard);
 
 module.exports = router
