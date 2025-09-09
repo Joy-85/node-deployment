@@ -7,7 +7,7 @@ const customerRouter = require("./routes/user.route")
 const URI = process.env.URI
 const PORT = process.env.PORT || 5185;
 
-
+   
 app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({extended: true}));
