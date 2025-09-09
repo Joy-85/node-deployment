@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const mongoose = require('mongoose');
-const { app } = require('..');
+
+
 //In databases, a schema defines the structure /shape of your data
 //schema  is like a blueprint for your database document.
 //schema is used to .....
